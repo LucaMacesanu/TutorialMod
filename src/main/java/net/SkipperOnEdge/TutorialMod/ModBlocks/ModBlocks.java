@@ -1,5 +1,6 @@
 package net.SkipperOnEdge.TutorialMod.ModBlocks;
 
+import net.SkipperOnEdge.TutorialMod.ModBlocks.custom.MagicBlock;
 import net.SkipperOnEdge.TutorialMod.TutorialMod;
 import net.SkipperOnEdge.TutorialMod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
@@ -37,6 +38,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> ALEXANDRITE_DEEPSLATE_ORE = registerBlock("alexandrite_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(3,6), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
 
 
 

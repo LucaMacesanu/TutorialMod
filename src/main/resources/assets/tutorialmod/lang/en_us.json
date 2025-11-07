@@ -2,10 +2,12 @@
   "item.tutorialmod.alexandrite": "Alexandrite Gem",
   "item.tutorialmod.raw_alexandrite": "Raw Alexandrite Gem",
   "block.tutorialmod.alexandrite_block": "Block of Alexandrite",
+  "block.tutorialmod.magic_block": "Magic Block",
   "block.tutorialmod.raw_alexandrite_block": "Block of Raw Alexandrite",
   "creativetab.tutorialmod.alexandrite_blocks": "Alexandrite Blocks",
   "creativetab.tutorialmod.alexandrite_items": "Alexandrite Items",
   "creativetab.tutorialmod.alexandrite_ore": "Alexandrite Ore",
   "creativetab.tutorialmod.alexandrite_deepslate_ore": "Alexandrite Deepslate Ore",
-  "item.tutorialmod.chisel": "Chisel"
+  "item.tutorialmod.chisel": "Chisel",
+  "creativetab.tutorialmod.magic_block": "Magic Block"
 }
