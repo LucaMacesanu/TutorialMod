@@ -1,6 +1,7 @@
 package net.SkipperOnEdge.TutorialMod.ModBlocks.custom;
 
 import net.SkipperOnEdge.TutorialMod.item.ModItems;
+import net.SkipperOnEdge.TutorialMod.util.ModTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
@@ -33,7 +34,7 @@ public class MagicBlock extends Block {
     public void stepOn(Level pLevel, BlockPos pPos, BlockState pState, Entity pEntity) {
 
         if(pEntity instanceof ItemEntity itemEntity){
-            if(itemEntity.getItem().getItem() == ModItems.RAW_ALEXANDRITE.get()){
+            if(ifValidItem(itemEntity.getItem())){
                 itemEntity.setItem(new ItemStack(Items.DIAMOND, itemEntity.getItem().getCount()));
             }
         }
@@ -45,5 +46,9 @@ public class MagicBlock extends Block {
         }
 
         super.stepOn(pLevel, pPos, pState, pEntity);
+    }
+
+    private boolean ifValidItem(ItemStack item) {
+        return item.is(ModTags.Items.TRANSFORMABLE_ITEMS);
     }
 }
